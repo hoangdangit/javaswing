@@ -1,0 +1,32 @@
+
+package javaxswing;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+public class JFrameDemo1 {
+    private JFrame frame;
+    JButton button,cc;
+    
+    public JFrameDemo1(){
+       createandshow ();
+    }
+    //
+    public void createandshow (){
+        frame =new JFrame();
+        button=new  JButton("ok");
+        cc=new JButton("cancel");
+        frame.setLocationRelativeTo(null);
+        frame.setSize(400,300);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.add(button);
+        frame.add(cc);
+        //frame.pack();
+        frame.setVisible(true);
+   
+    }
+     //
+  
+    public static void main (String []agrs){
+       JFrameDemo1 cc= new JFrameDemo1();
+    }
+}
